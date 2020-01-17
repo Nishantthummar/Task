@@ -1,8 +1,11 @@
 #include <stdio.h>
+#include <stdlib.h>
+/****************************************************************/
 float add(float, float);
 float sub(float, float);
 float mul(float, float);
-float div(float, float);
+float divi(float, float);
+/****************************************************************/
 void main()
 {
 	char cInput; //!< for select opration user input
@@ -37,7 +40,7 @@ void main()
 		printf("\nmul is %f", fresult);
 	} else if (cInput == 'd' || cInput == 'D') { //!< check d or D
 		if (fInput2 !=0) {  //!< check divider zero or not
-		fresult = div(fInput1,fInput2);
+		fresult = divi(fInput1,fInput2);
 		printf("\ndiv is %f", fresult);
 		}
 		else {
@@ -45,6 +48,7 @@ void main()
 		}
 	} else if (cInput == 'q' || cInput == 'Q') { //!< check q or Q
 		printf("\n quit!!!\n");
+		exit(1);
 		
 	}
 	else
@@ -97,7 +101,7 @@ float mul(float s1, float s2)
  * @param[in] s2 store second value
  * @return division
  */
-float div(float s1, float s2)
+float divi(float s1, float s2)
 {
 	return (s1/s2);
 }
