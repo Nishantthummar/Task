@@ -26,7 +26,7 @@ void main()
 	scanf("%f", &fInput1); //!< get input from user
 	printf("\nEnter the 2nd value = ");
 	scanf("%f", &fInput2); //!< get input from user
-	printf("\nEnter valid opration =");
+	printf("\nEnter valid opration = ");
 	scanf("%s", &cInput); //!< get choise from user
 
 	if (cInput == 'a' || cInput == 'A') { //!< check a or A 
